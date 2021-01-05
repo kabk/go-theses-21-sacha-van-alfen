@@ -1,43 +1,30 @@
-let titleBar = $('#title-bar')
-
-$(function() {
-    dropDownMenu();
-    changeHeadingOnSight();
-});
-
-
-
-function dropDownMenu() {
-  $("ul.main-menu li").hover(function() {
-      $(">ul:not(:animated)", this).slideDown(500);
-  }, function() {
-      $(">ul", this).slideUp(300);
-  });
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
 }
 
-function changeHeadingOnSight() {
-  let titles = document.querySelectorAll('.chapter-title');
-
-  let options = {
-    root: null,
-    rootMargin: "0px 0px -93% 0px",
-    threshold: 0
-  };
-  let observer = new IntersectionObserver(changeHeading, options);
-
-  titles.forEach(title => {
-    observer.observe(title);
-  });
-}
-
-let changeHeading = (entries, observer) => {
-  entries.forEach(entry => {
-    let title = entry.target;
-    // let title.childNotes
-    // console.log(title)
-
-    if (entry.isIntersecting) {
-      titleBar[0].innerHTML = title.innerHTML;
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
     }
-  });
-};
+  }
+}
+
+
+
+$(window).on("scroll",function(e){
+
+    var pos = $(window).height() - $(window).scrollTop();
+
+    $(".intermezzo1").css("top", $(window).height() +  pos)
+    // $(".intermezzo2").css("top",  $(window).height() + pos/2)
+    // $(".intermezzo3").css("left", $(window).height() +  pos)
+    // $(".intermezzo4").css("",  $(window).height() + pos/2)
+    // $(".intermezzo5").css("", $(window).height() +  pos)
+
+});

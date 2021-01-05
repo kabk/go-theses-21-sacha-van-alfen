@@ -9,11 +9,11 @@ function footnotePopup(showIndex, showCloseBtn) {
 
     // Set whether to display index and/or close button. Default is true for both
     if (showIndex === undefined) {
-        showIndex = true;
+        showIndex = false;
     }
 
     if (showCloseBtn === undefined) {
-        showCloseBtn = true;
+        showCloseBtn = false;
     }
 
     // Create main container that will hold footnote content
@@ -32,13 +32,6 @@ function footnotePopup(showIndex, showCloseBtn) {
         popupCloseButton.innerHTML = "[x]";
         popupCloseButton.id = "popup-close";
     }
-
-    // Remove redundant [return] links from footnote list (optional)
-    const fnReturns = document.querySelectorAll("a.footnote-return");
-    fnReturns.forEach(function(fnReturn) {
-        const parent = fnReturn.parentNode;
-        parent.removeChild(fnReturn);
-    });
 
     const fnRefs = document.querySelectorAll("sup[id^='fnref:']");
     fnRefs.forEach(function(fnRef) {
@@ -74,3 +67,23 @@ function footnotePopup(showIndex, showCloseBtn) {
 };
 
 footnotePopup(true, true);
+
+
+
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
