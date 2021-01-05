@@ -25,7 +25,7 @@ html, body {
 /* LANDINPAGE */
 .container {
     width: 100%;
-    height: 50vh;
+    height: 47vh;
     overflow: hidden;
     background: rgb(233, 233, 233);
     position: relative;
@@ -55,7 +55,7 @@ html, body {
 
 .container2 {
     width: 100%;
-    height: 50vh;
+    height: 47vh;
     overflow: hidden;
     background: rgb(233, 233, 233);
     /* background: radial-gradient(#e66465, #9198e5); */
@@ -142,6 +142,11 @@ i{
 }
 .basker a{
   font-family: serif;
+}
+.rose img{
+  position: absolute;
+  height: 20px;
+  width: 20px;
 }
 
 /* UNDERLINE LINKS */
@@ -468,63 +473,60 @@ nav ul ul {
   	}
 
   /* INTERMEZZO'S */
-
-  .intermezzo1 {
-    position: absolute;
-    left: 100px;
-    top: 50em;
-    z-index: 3;
-}
 .intermezzo1 img{
   position: absolute;
-  width: 100px;
+  width: 30px;
   height: auto;
-}
-.intermezzo2 {
-  position: absolute;
-  left: 200px;
-  top: 800px;
-  z-index: 3;
+  left: 46%;
+  right: 50%;
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
 }
 .intermezzo2 img{
   position: absolute;
-  width: 100px;
+  width: 30px;
   height: auto;
-}
-.intermezzo3 {
-  position: absolute;
-  left: 10px;
-  top: 900px;
-  z-index: 3;
+  left: 46%;
+  right: 50%;
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
 }
 .intermezzo3 img{
-position: absolute;
-width: 100px;
-height: auto;
-}
-.intermezzo4 {
-position: absolute;
-left: 10px;
-top: 1000px;
-z-index: 3;
+  position: absolute;
+  width: 30px;
+  height: auto;
+  left: 46%;
+  right: 50%;
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
 }
 .intermezzo4 img{
-position: absolute;
-width: 100px;
-height: auto;
-}
-.intermezzo5 {
-position: absolute;
-left: 200px;
-top: 800px;
-z-index: 3;
+  position: absolute;
+  width: 30px;
+  height: auto;
+  left: 46%;
+  right: 50%;
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
 }
 .intermezzo5 img{
-position: absolute;
-width: 100px;
-height: auto;
-z-index: 1;
+  position: absolute;
+  width: 30px;
+  height: auto;
+  left: 46%;
+  right: 50%;
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
 }
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
   /* footnote popup */
 

@@ -14,17 +14,3 @@ window.onclick = function(event) {
     }
   }
 }
-
-
-
-$(window).on("scroll",function(e){
-
-    var pos = $(window).height() - $(window).scrollTop();
-
-    $(".intermezzo1").css("top", $(window).height() +  pos)
-    // $(".intermezzo2").css("top",  $(window).height() + pos/2)
-    // $(".intermezzo3").css("left", $(window).height() +  pos)
-    // $(".intermezzo4").css("",  $(window).height() + pos/2)
-    // $(".intermezzo5").css("", $(window).height() +  pos)
-
-});
