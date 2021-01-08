@@ -24,7 +24,7 @@ html, body {
 
 /* LANDINPAGE */
 .container {
-    width: 100%;
+    width: 100vw;
     height: 54vh;
     overflow: hidden;
     background: rgb(233, 233, 233);
@@ -56,7 +56,7 @@ html, body {
 }
 
 .container2 {
-    width: 100%;
+    width: 100vw;
     height: 48vh;
     overflow: hidden;
     background: rgb(233, 233, 233);
@@ -582,6 +582,9 @@ nav ul ul {
     min-width: 50%;
     text-align: left;
     padding: 1.25rem 0 1.25rem 0.9rem;
+  }
+  ol{
+    display: none;
   }
 
 .bg-container {

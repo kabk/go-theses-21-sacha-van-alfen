@@ -24,7 +24,7 @@ html, body {
 
 /* LANDINPAGE */
 .container {
-    width: 100%;
+    width: 100vw;
     height: 54vh;
     overflow: hidden;
     background: rgb(233, 233, 233);
@@ -56,7 +56,7 @@ html, body {
 }
 
 .container2 {
-    width: 100%;
+    width: 100vw;
     height: 48vh;
     overflow: hidden;
     background: rgb(233, 233, 233);
@@ -690,6 +690,16 @@ background-color:rgb(255, 101, 207);
 
   .image-footnotes-italic {
     font-size: 12px;
+  }
+
+  .container {
+      width: 100%;
+      height: 54vh;
+      overflow: hidden;
+      background: rgb(233, 233, 233);
+      position: fixed;
+      top:0px;
+      left:0px
   }
 
 }
