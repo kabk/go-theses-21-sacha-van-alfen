@@ -1,19 +1,43 @@
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
+const toggleBtn = document.getElementById("toggle");
+const navMenu = document.getElementById("navMenu");
+const links = document.getElementsByClassName("navLink");
+
+let navBarOpen = false;
+
+toggleBtn.addEventListener("click", function () {
+  if (!navBarOpen) {
+    navMenu.classList.remove("close");
+    navMenu.classList.add("open");
+
+    toggleBtn.classList.remove("close");
+    toggleBtn.classList.add("open");
+
+    navBarOpen = true;
+  } else if (navBarOpen) {
+    navMenu.classList.remove("open");
+    navMenu.classList.add("close");
+
+    toggleBtn.classList.remove("open");
+    toggleBtn.classList.add("close");
+
+    navBarOpen = false;
+  }
+});
+
+/* Credit to: Elnatan vazana: https://stackoverflow.com/users/12740967/elnatan-vazana */
+for (let i = 0; i < links.length; i++) {
+  links[i].addEventListener("click", () => {
+    navMenu.classList.remove("open");
+    navMenu.classList.add("close");
+
+    toggleBtn.classList.remove("open");
+    toggleBtn.classList.add("close");
+
+    navBarOpen = false;
+  });
 }
 
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
+
 
 
 // Select all links with hashes

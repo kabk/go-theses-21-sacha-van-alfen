@@ -38,14 +38,14 @@ html, body {
     box-sizing: border-box;
     animation: slider 90s linear infinite;
     list-style-type: none;
-    text-align: center;
+    /* text-align: center; */
 }
 @keyframes slider {
     0%   { top:   -100em }
     100% { top: 0em }
 }
 .slider {
-  	margin: 0;
+  	margin: 15px;
     padding: 0 1em;
     line-height: 25px;
 }
@@ -72,13 +72,14 @@ html, body {
     box-sizing: border-box;
     animation: slider 90s linear infinite;
     list-style-type: none;
-    text-align: center;
+    /* text-align: center; */
     animation-direction: reverse;
 }
 .slider2 {
-  	margin: 0;
+  	margin: 15px;
     padding: 0 1em;
     line-height: 25px;
+
 }
 .slider2 p {
   font-family:'SuisseR';
@@ -220,13 +221,12 @@ sup {
     hyphens: auto;
     hyphenate-limit-chars: 9 3 3;
 }
-
-/* INDENT */
-.indent {
-  font-family: 'OggI';
-  font-size: 16px;
+.indent2 {
+  font-family: 'SuisseR';
+  font-size: 18px;
+  color: rgb(255, 101, 207);
   padding-top: 0px;
-  padding-left: 18px;
+  padding-left: 30px;
   padding-right: 0px;
   overflow-wrap: break-word;
     word-wrap: break-word;
