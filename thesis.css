@@ -528,10 +528,8 @@ nav.open {
     max-width: 100%;
     margin: 0 auto;
     color: black;
-    background-color: white;
+    background-color: rgb(250, 250, 250);
     border-top: 1px solid black;
-    /* background: linear-gradient(90deg, rgb(254, 69, 213) 5%, white 70%);
-    background: -webkit-linear-gradient(90deg, rgb(254, 69, 213) 5%, white 70%); */
     z-index: 5;
   }
 
@@ -550,11 +548,28 @@ nav.open {
   #popup-content {
     min-width: 50%;
     text-align: left;
+    margin-right: 20px;
     padding: 1.25rem 0 1.25rem 0.9rem;
   }
   ol{
     display: none;
   }
+
+  /* nav {
+    display: block;
+    transform: translateY(-100%);
+    transition-duration: 0s;
+  }
+
+  nav.close {
+    transition-duration: 0.5s;
+    transform: translateY(-100%);
+  }
+
+  nav.open {
+    transition-duration: 0.5s;
+    transform: translateY(0%);
+  } */
 
 .bg-container {
   position: fixed;

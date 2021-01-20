@@ -26,12 +26,12 @@ function footnotePopup(showIndex, showCloseBtn) {
         popupIndex.id = "popup-index";
     }
 
-    let popupCloseButton = null;
-    if (showCloseBtn) {
-        popupCloseButton = popupWrapper.appendChild(document.createElement("div"));
-        popupCloseButton.innerHTML = "[x]";
-        popupCloseButton.id = "popup-close";
-    }
+    // let popupCloseButton = null;
+    // if (showCloseBtn) {
+    //     popupCloseButton = popupWrapper.appendChild(document.createElement("div"));
+    //     popupCloseButton.innerHTML = "[x]";
+    //     popupCloseButton.id = "popup-close";
+    // }
 
     const fnRefs = document.querySelectorAll("sup[id^='fnref:']");
     fnRefs.forEach(function(fnRef) {
