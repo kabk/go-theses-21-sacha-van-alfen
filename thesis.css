@@ -407,6 +407,7 @@ nav.open {
   height: -10px;
   color: #f8f9fa;
   cursor: pointer;
+  z-index: 99;
 }
 
 #toggle .icon {
