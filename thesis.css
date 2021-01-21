@@ -275,8 +275,8 @@ div.small-indent {
     padding-top: 20px;
     overflow: scroll;
     z-index: 1;
-    background: linear-gradient(90deg,rgba(233, 233, 233, 0) 20%,rgb(255, 101, 207) 100%);
-    background: -webkit-linear-gradient(90deg,rgba(233, 233, 233, 0) 20%,rgb(255, 101, 207) 100%);
+    background: linear-gradient(90deg,rgba(233, 233, 233, 0) -0%,rgb(255, 101, 207) 90%);
+    background: -webkit-linear-gradient(90deg,rgba(233, 233, 233, 0) 0%,rgb(255, 101, 207) 90%);
     z-index: 99;
 }
 
