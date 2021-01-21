@@ -625,19 +625,19 @@ background-color:rgb(255, 101, 207);
   html, body { overflow-x: hidden }
 
   @keyframes slider {
-      0%   { top:   -140em }
+      0%   { top:   -90em }
       100% { top: 0em }
   }
 .slider {
-    line-height: 5.8em;
+    line-height: 1.4em;
 }
 .slider p {
-  font-size: 115px;
+  font-size: 16px;
 }
 .slider2 {
-    line-height: 4.5em;
+    line-height: 1.4em;
 }
 .slider2 p {
-  font-size: 85px;
+  font-size: 16px;
 }
 }

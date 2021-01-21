@@ -213,7 +213,8 @@ sup {
 }
 
 .image-footnotes {
-  font-family: 'SuisseR', serif;
+  font-family: 'SuisseR';
+  color: rgb(255, 101, 207);
   font-size: 15px;
   padding-top: 6px;
   padding-left: 18px;
@@ -239,6 +240,9 @@ sup {
     -ms-hyphens: auto;
     hyphens: auto;
     hyphenate-limit-chars: 9 3 3;
+}
+div.small-indent {
+  text-indent: 18px;
 }
 
 /* PAGE HEADER*/
@@ -308,7 +312,7 @@ sup {
   display: block;
   margin-bottom: 10px;
   border-radius: 30px;
-  border: 1px solid rgb(255, 101, 207);
+  /* border: 1px solid rgb(255, 101, 207); */
 
 }
 .images2 img{
@@ -319,7 +323,7 @@ sup {
   display: block;
   margin-bottom: 10px;
   border-radius: 30px;
-  border:1px solid rgb(255, 101, 207);
+  /* border:1px solid rgb(255, 101, 207); */
 }
 /* TITLE HEADER */
 #title-bar {
@@ -345,7 +349,7 @@ sup {
     padding-top: 1vh;
     float: right;
     width: 100%;
-    height: 10%;
+    height: 5%;
     z-index: 200;
 }
 
@@ -376,18 +380,19 @@ nav.open {
 .menu li {
   list-style:
   padding: 15px 15px;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
+  line-height: 7vh;
 }
 
 .menu li a {
   position: relative;
-  top: 30px;
+  top: 50px;
   text-decoration: none;
   color: black;
   transition: opacity 0.3s;
   font-family: 'OggR';
-  line-height: 9vh;
+  z-index: 99999999999999;
 }
 
 #toggle {
