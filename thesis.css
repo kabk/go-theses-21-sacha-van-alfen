@@ -253,6 +253,13 @@ div.small-indent {
     align-items: center;
     height: 40px;
 }
+.page-header2 {
+    position:fixed ;
+    z-index: 200;
+    width: 100%;
+    align-items: center;
+    height: 40px;
+}
 .page-middle {
     position: fixed;
     bottom: 47.5%;
@@ -273,6 +280,7 @@ div.small-indent {
     position: relative;
     width: 50%;
     height: 100vh;
+    width: 100vw;
     padding-top: 20px;
     overflow: scroll;
     z-index: 1;
@@ -341,7 +349,7 @@ div.small-indent {
     float: right;
     width: 100%;
     height: 10%;
-    z-index: 200;
+    /* z-index: 9999999999999999; */
 }
 #title-grey {
     font-size: 18px;
@@ -351,7 +359,8 @@ div.small-indent {
     text-align: center;
     padding-bottom: 1vh;
     padding-top: 1vh;
-    left: 85px;
+    left:20%;
+    right:20%;
     width: 60%;
     height: 5%;
     z-index: 200;
