@@ -483,6 +483,7 @@ nav.open {
   -moz-animation:spin 4s linear infinite;
   animation:spin 4s linear infinite;
 }
+
 .intermezzo2 img{
   position: absolute;
   width: 30px;
