@@ -7,7 +7,7 @@ function getFootnoteContent(index) {
 function footnotePopup(showIndex, showCloseBtn) {
     const popupWrapper = document.querySelector("#popup-wrapper");
 
-    // Set whether to display index and/or close button. Default is true for both
+
     if (showIndex === undefined) {
         showIndex = false;
     }
@@ -16,7 +16,7 @@ function footnotePopup(showIndex, showCloseBtn) {
         showCloseBtn = false;
     }
 
-    // Create main container that will hold footnote content
+
     const popupContent = popupWrapper.appendChild(document.createElement("div"));
     popupContent.id = "popup-content";
 
